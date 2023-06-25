@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <link
+      href="../styles/main.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <title>Margin vs Border vs Padding</title>
+  </head>
+
+  <body>
+    <header class="header">
+      <h1 id="menu-item">Liang's Blog</h1>
+      <ul id="navigation">
+        <li class="menu-item">
+          <a
+            href="../index.html"
+            class="menu-link"
+            >Home</a
+          >
+        </li>
+        <li class="menu-item">
+          <a
+            href="te-houtaewa-template.html"
+            class="menu-link"
+            >Te-Houtaewa-Template</a
+          >
+        </li>
+      </ul>
+    </header>
+    <div class="main-content">
+      <section class="main-content-section">
+        <h1 class="main-content-section-h1">
+          What is the difference between Margin, Border, and Padding?
+        </h1>
+        <p>
+          By usinging at the CSS Box Model, we can easily explaing the
+          difference between Margin, Border, and Padding.
+        </p>
+        <p>
+          The CSS box model is essentially a box that wraps around every HTML
+          element. It consists of: margins, borders, padding, and the actual
+          content. The image below illustrates the box model:
+        </p>
+
+        <img
+          class="image-example"
+          src="../image/css-box-model.png"
+          alt="CSS Box Model"
+        />
+        <ul>
+          Explanation of the different parts:
+          <li>
+            Content is the most inner part, which is like a text box containing
+            the actual content of the element.
+          </li>
+          <li>
+            Padding is the space between the border of an element and the
+            content inside it.
+          </li>
+
+          <li>
+            Border is the line between the margin and padding of an element.
+            It's only counted when given an actual width otherwise, it's zero.
+          </li>
+          <li>Margin is the space which is around an element.</li>
+        </ul>
+
+        <p>Below is an simple examle in practical use:</p>
+
+        <div>
+          <div class="image-wrap">
+            <div>
+              <img
+                class="image-example"
+                src="../image/box-css-code.png"
+                alt="Box model example"
+              />
+            </div>
+            <div>
+              <img
+                class="image-example"
+                src="../image/box-css-result.png"
+                alt="Box model example"
+              />
+            </div>
+          </div>
+
+          <p>
+            The box model allows us to add a border around elements, and to
+            define space between elements.
+          </p>
+        </div>
+      </section>
+    </div>
+
+    <footer class="footer">
+      <p>©Copyright 2023 by Liang Wang. All rights reserved.</p>
+    </footer>
+  </body>
+</html>

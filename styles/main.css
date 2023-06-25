@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Ysabeau+Office&display=swap');
+.header {
+  background-color: #3e6770;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: auto;
+  margin-top: 10px;
+  padding: 20px;
+}
+
+#navigation {
+  display: flex;
+  justify-content: space-around;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.menu-item {
+  display: flex;
+  align-items: center;
+  font-size: 25px;
+  margin-left: 30px;
+}
+
+.menu-link {
+  color: #f6f6f6;;
+}
+
+.header-menu {
+  display: flex;
+  gap: 80px;
+}
+
+.header-menu-link {
+  font-family: 'Ysabeau Office', 'Helvetica', Sans-Serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #0ac7f1;
+  text-decoration: none;
+}
+
+body {
+  background-color: rgb(48, 48, 122);
+  color: #f6f6f6;
+  font-family: 'Ysabeau Office', 'Ysabeau Office', 'Helvetica', Sans-Serif;
+}
+
+h1,
+h2,
+h3 {
+  font-family: 'Ysabeau Office', 'Helvetica', Sans-Serif;
+}
+
+.main-content {
+  max-width: 88%;
+  position: relative;
+  padding: 3% 12%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+}
+
+.home-content {
+  margin-top:200px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 200px;
+  max-width: 350px;
+  align-self: auto;
+}
+
+.main-content-section {
+  max-width: 100%;
+  flex-direction: column;
+}
+
+.blog-content {
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.blog-content-wrap {
+  max-width: 550px;
+  padding: 10px;
+  margin: 10px;
+  display: block;
+}
+
+p,
+.justify {
+  font-size: 1.2rem;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.main-content-section-h1 {
+  font-size: 2rem;
+}
+
+.div-links {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 32px;
+}
+
+.link {
+  display: flex;
+  justify-content: center;
+  border: 2px solid #22d4fd;
+  width: 100%;
+  text-align: center;
+  border-radius: 8px;
+  font-size: 1.5rem;
+  font-weight: 550;
+  padding: 20px 0;
+  text-decoration: none;
+  color: #f6f6f6;
+  font-family: 'Ysabeau Office', 'Helvetica', Sans-Serif;
+  min-height: 50px;
+  align-items: center;
+}
+
+.link:hover {
+  background-color: #352d2d;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.image-wrap {
+  max-width: 100%;
+  display: flex;
+}
+
+.footer {
+  padding: 24px;
+  color: black;
+  background-color: #0db7dd;
+  text-align: center;
+  font-family: 'Ysabeau Office', 'Helvetica', Sans-Serif;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.footer p {
+  text-align: center;
+}
+
+@media (max-width: 900px) {
+  .header {
+    padding: 10%;
+  }
+
+  .header-menu {
+    justify-content: center;
+  }
+
+  .main-content {
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  .main-content-section {
+    width: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .image-wrap {
+    display: block;
+  }
+}
