@@ -27,6 +27,10 @@
   color: #f6f6f6;;
 }
 
+.inline-link {
+  color: #f6f6f6;;
+}
+
 .header-menu {
   display: flex;
   gap: 80px;
