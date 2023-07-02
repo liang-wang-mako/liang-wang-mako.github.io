@@ -44,39 +44,107 @@
           JavaScript, often abbreviated as JS, is a programming language that is one of the core technologies of the World Wide Web. It works alongside HTML and CSS to create content and dynamic interfaces for web browser. It is kind of like the design and building of the house.
           <ul>
             <li>
-             An HTML provides the structure of a web page by arranging different contents into the proper HTML elements or tags such as Head, body, p, img etc. 
+             An HTML provides the structure of a web page by arranging different contents into the proper HTML elements or tags such as Head, body, p, img etc. It is kind of like the structure of the building which contains a roof, 3 rooms, and 1 garage etc..
             </li>
             <li>
-              A CSS file contains the styling of the page. It allows you to change colors, background, font, positioning, and more. It is kind of like the design of the building itself.
+              A CSS file contains the styling of the page. It allows you to change colors, background, font, positioning, and more. It is kind of like the design of the house itself. For example, what is color the roof, the positions and sizes of the rooms, and what material is used for the walls.
             </li>
             <li>
-              Javascript is used to create interactive user interface elements like forms, menus, maps, and other interactive elements. It can also be used to communicate between a client and a server and to control document elements on the page. JavaScript adds behavior and functionality to the page and works with HTML and CSS to make a web page more interactive and interesting. This is kind of like the functionality of the building.
+              Javascript is used to create interactive user interface elements like forms, menus, maps, and other interactive elements. It can also be used to communicate between a client and a server and to control document elements on the page. JavaScript adds behavior and functionality to the page and works with HTML and CSS to make a web page more interactive and interesting. This is kind of like the functionality of the house. For example, we can use header to warm up the room, and use the kitchen to cook food.
             </li>
           </ul>
         </p>
 
         <h2 class="justify">
-          Objects, Arrays, Loops, and Control Flow
+          Objects vs Arrays
         </h2>
+        <h3>
+          Object
+        </h3>
+        <p>
+          Objects are used to represent a “thing” in your code. That could be a person, a car, a building, a book, a character in a game — basically anything that is made up or can be defined by a set of characteristics. In objects, these characteristics are called properties that consist of a key and a value.
+        </p>
+        <code>
+          // Basic object syntax
+              var object = {
+              key: 'value'
+            };
+            
+          // Example 'person' object
+              var person = {
+              name: 'John',
+              age: 52,
+              rgistered: false
+            };
+        </code>
+        <p>Properties or data in objects can be accessed, added, changed ,and removed by using either <span>dot</span> or <span>bracket</span> notation. To get the value of the age key in our personobject with both dot and bracket notation, we'd write:
+        </p>
+          <code>
+            // Dot notation
+               person.age 
+            // returns 33
+
+            // Bracket notation
+               person['age'] 
+            // returns 33
+          </code>
 
         <p>
-          Objects: Objects in Javascript are key/value pairs that can store any type of data. Objects provide developers with a way to store and manipulate complex data. Below is an example of Javascript object:
+          Say we wanted to change the value of registered to true, we can do that with dot notation like this:
         </p>
         <code>
-          // Object
-          let user = {
-          name: "John Doe",
-          age: 30
-          };
-          console.log(user)
+          person.registered = true;
         </code>
         <p>
-          Arrays: Arrays in JavaScript store multiple values in an indexed order. Arrays can contain strings, integers, or any other object type. Below is an example of Javascript of Array:
+          And if we wanted to add a new property to our person object, we could accomplish that with dot notation as well:
         </p>
         <code>
-          // Array
-            let letters = ["a", "b", "c"];
-            console.log(letters);
+          person.hobbies = ['hiking', 'travel', 'reading'];
+        </code>
+        <p>
+          Finally, to remove a property from an object, we use the delete keyword like so:
+        </p>
+        <code>
+          delete person.age;
+        </code>
+
+        <h3>
+          Array
+        </h3>
+          <p>
+          We use arrays whenever we want to create and store a list of multiple items in a single variable. Arrays are especially useful when creating ordered collections where items in the collection can be accessed by their numerical position in the list. Just as object properties can store values of any primitive data type (as well as an array or another object), so too can arrays consist of strings, numbers, booleans, objects, or even other arrays.
+        </p>
+        <p>
+          Arrays use zero-based indexing, so the first item in an array has an index of 0, the second item an index of 1, and so on. For instance, let’s say we wanted to access the third item ('kiwi fruit') in the following array:
+        </p>
+        <code>
+          var fruits = ['apple', 'orange', 'kiwi fruit', 'bule berry'];
+        </code>
+        
+        <p>
+          To do so, we'd write:
+        </p>
+        <code>
+          fruits[2]; // returns 'kiwi fruit'
+        </code>
+        <p>
+          Items can be added and removed from the beginning or end of an array using the push(), pop(), unshift(), and shift() methods:
+        </p>
+        <code>
+          // push() - Adds item(s) to the end of an array
+            fruits.push('watermelon');
+          // pop() - Removes the last item from an array
+            fruits.pop();
+          // unshift() - Adds item(s) to the beginning of an array
+            fruits.unshift('pear', 'cherry');
+          // shift() - Removes the first item from an array
+            fruits.shift();
+        </code>
+        <h2>
+          Loops and Control Flow
+        </h2>
+        <code>
+          vacationSpots[2]; // returns 'Mexico City'
         </code>
         <p>
           Loops: Loops in JavaScript are used to repeat specific code blocks efficiently. They can be used to loop through arrays or objects and perform operations on each item in the array or object.  Below is an example of Javascript of Loop:

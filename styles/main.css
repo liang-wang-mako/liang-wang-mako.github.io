@@ -159,6 +159,10 @@ code {
   border-radius: 8px;
 }
 
+span {
+  font-weight: bold;
+}
+
 .footer {
   padding: 24px;
   color: black;
