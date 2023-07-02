@@ -310,8 +310,16 @@
              </li>
           </ul>
           <p>
-            In other words: The HTML DOM is a standard for how to get, change, add, or delete HTML elements.
+            In other words, the HTML DOM is a standard for how to get, change, add, or delete HTML elements.
           </p>
+          <p>
+              The HTML DOM is a tree-like structure.
+          </p>
+            <img
+              class="image-example"
+              src="../image/dom-model.png"
+              alt="Dom model example"
+            />
           <ul>
             With the HTML DOM, JavaScript gets all the power it needs to create dynamic HTML. It can:
             <li>
@@ -338,27 +346,76 @@
           </ul>
 
           <p>
-            Below is an example changes the content of the <p> element with id="demo":</p>
-            <code>
-             <html>
-              <body>
-              <p id="demo"></p>
-              <script>
-                document.getElementById("demo").innerHTML = "Hello World!";
-              </script>
-            </body>
-            </html> 
-            </code>
+            Below is an example changes the content of the <p> element with id="demo":
+            </p>
+                <code>
+               
+                    document.getElementById("demo").innerHTML = "Hello World!";
+               
+              </code>
             <p>
-              In the example above, getElementById is a method, while innerHTML is a property.
+              In the example above, getElementById is a method, while innerHTML is a property of the selected element.
             </p>
 
           <h3>
             DevTools
           </h3>
           <p>
-            One of the ways we access the DOM is using Developer Tools (DevTools). DevTools are a set of web developer tools, which assists us with testing and debugging websites and applications. All major browsers include developer tools, which enable developers to examine the code of a web page or app and run tests and evaluate metrics related to that code. Chrome Developer Tools (DevTools for short) is the industry standard. DevTools allows us to access the DOM and assists us with testing and debugging websites and applications.
+            DevTools allows us another wayto access the DOM.
+            DevTools are a set of web developer tools , which assists us with testing and debugging websites and applications. All major browsers include developer tools, which enable developers to examine the code of a web page or app and run tests and evaluate metrics related to that code. Chrome Developer Tools (DevTools for short) is the industry standard. 
           </p>
+          <p>
+            Pressing F12 would launch the developer tools on most new browsers on a desktop. On chrome, they look something like this:
+          </p>
+           <img
+              class="image-example"
+              src="../image/dev-tool-example.png"
+              alt="Dom model example"
+            />
+          <p>
+            Navigate each panel by clicking on the tab located on the top of the screen.
+          </p>
+            <ul>
+              On Chrome DevTools, here are some of the top features:
+              <li>
+                A device preview to test your webpage's responsive design
+              </li>
+              <li>
+                A JavaScript debugger to identify and fix bugs
+              </li>
+              <li>
+                A network panel to track and analyze page requests
+              </li>
+              <li>
+                An inspector tool to make styling changes, such as font, spacing, colors, margins
+              </li>
+              <li>
+                A console to identify page errors and warnings
+              </li>
+              <li>
+                A performance panel to check your website performance, such as page speed
+              </li>
+            </ul>
+
+          <p>
+            Using only devtools we were able to identify the root cause and fix for a performance issue in a codebase with which we were not familiar. 
+             
+          </p>
+          <ul>
+            Here, I have no time to discuss more details on Web Dev Tool, so I provide a few tutorial sites about how to learn Web Dev Tools for begineer.
+            <li>
+              <a class="menu-link" href="https://www.codementor.io/learn-development/javascript-css-html-tutorial-front-end-development-tools" target="_blank">Web Development Tutorial: Understanding how to use the Browser Developer Tools</a>
+            </li>
+            <li>
+              <a class="menu-link" href="https://blog.hubspot.com/customers/design-updates-in-browser-guide" target="_blank">Your Simple Guide to Chrome DevTools [+ Step-by-Step Instructions]</a>
+            </li>
+            <li>
+              <a class="menu-link" href="https://nira.com/chrome-developer-tools/" target="_blank">The Beginner's Guide to Chrome Developer Tools</a>
+            </li>
+            <li>
+               <a class="menu-link" href="https://reflect.run/articles/devtools-step-by-step/" target="_blank">A practical, step-by-step guide to using Chrome's DevTools</a>
+            </li>
+          </ul>
       </section>
     </main>
     <footer class="footer">
