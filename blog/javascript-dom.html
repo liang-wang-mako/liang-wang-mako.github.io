@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>JS Fundamentals</title>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <link
+      href="../styles/main.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+  </head>
+
+  <body>
+    <header class="header">
+      <h1 id="menu-item">Liang's Blog</h1>
+      <ul id="navigation">
+        <li class="menu-item">
+          <a
+            href="../index.html"
+            class="menu-link"
+            >Home</a
+          >
+        </li>
+        <li class="menu-item">
+          <a
+            href="te-houtaewa-template.html"
+            class="menu-link"
+            >Te-Houtaewa-Template</a
+          >
+        </li>
+      </ul>
+    </header>
+    <main class="main-content">
+      <section class="main-content-section">
+        <h1 class="main-content-section-h1">Javascript Fundamentals</h1>
+        <h2 class="justify">
+          JavaScript and its relationship to HTML and CSS
+        </h2>
+        <p>
+          JavaScript, often abbreviated as JS, is a programming language that is one of the core technologies of the World Wide Web. It works alongside HTML and CSS to create content and dynamic interfaces for web browser. It is kind of like the design and building of the house.
+          <ul>
+            <li>
+             An HTML provides the structure of a web page by arranging different contents into the proper HTML elements or tags such as Head, body, p, img etc. 
+            </li>
+            <li>
+              A CSS file contains the styling of the page. It allows you to change colors, background, font, positioning, and more. It is kind of like the design of the building itself.
+            </li>
+            <li>
+              Javascript is used to create interactive user interface elements like forms, menus, maps, and other interactive elements. It can also be used to communicate between a client and a server and to control document elements on the page. JavaScript adds behavior and functionality to the page and works with HTML and CSS to make a web page more interactive and interesting. This is kind of like the functionality of the building.
+            </li>
+          </ul>
+        </p>
+
+        <h2 class="justify">
+          Objects, Arrays, Loops, and Control Flow
+        </h2>
+
+        <p>
+          Objects: Objects in Javascript are key/value pairs that can store any type of data. Objects provide developers with a way to store and manipulate complex data. Below is an example of Javascript object:
+        </p>
+        <code>
+          // Object
+          let user = {
+          name: "John Doe",
+          age: 30
+          };
+          console.log(user)
+        </code>
+        <p>
+          Arrays: Arrays in JavaScript store multiple values in an indexed order. Arrays can contain strings, integers, or any other object type. Below is an example of Javascript of Array:
+        </p>
+        <code>
+          // Array
+            let letters = ["a", "b", "c"];
+            console.log(letters);
+        </code>
+        <p>
+          Loops: Loops in JavaScript are used to repeat specific code blocks efficiently. They can be used to loop through arrays or objects and perform operations on each item in the array or object.  Below is an example of Javascript of Loop:
+        </p>
+        <code>
+          // Loop Statement
+          const numbers = [1, 2, 3, 4, 5];
+          for (let i = 0; i < numbers.length; i++) {
+          console.log(numbers[i]);
+          }
+        </code>
+
+        <p>
+          Control Flow: Control flow statements in JavaScript allow programs to do different things depending on certain conditions. They include if/else statements, switch statements, and while/for loop statements.
+        </p>
+
+        <code>
+          // Control Flow Statement
+          let balance = 500;
+          if (balance > 0) {
+            console.log("You have money in your account");
+          } else {
+            console.log("You are overdrawn");
+          }
+        </code>
+
+        <h2 class="justify">
+          Functions and why they are useful
+        </h2>
+        <p>
+          Functions are one of the fundamental building blocks in JavaScript. A function is a block of reusable code written to perform a specific task.
+          You can think of a function as a sub-program within the main program. A function consists of a set of statements but executes as a single unit.
+          Functions in JavaScript are like recipes in a cookbook. Just like you can reuse a recipe multiple times to make the same meal, you can reuse functions multiple times to complete a task.
+          
+          Functions also make it easier to read and debug code by breaking down complex tasks into smaller, simpler chunks. Additionally, functions let you organize code into different recipes, making it easier to find and access specific chunks of code.
+        </p>
+        <ul>
+          Basically, it consists of the following:
+          <li>
+            Function keyword
+          </li>
+          <li>
+            The name of the function
+          </li>
+          <li>
+            Parentheses (which can take in parameters, or also be empty)
+          </li>
+          <li>
+            The body of the function (wrapped in curly braces).
+          </li>
+        </ul>
+
+        <p>
+          Here's an example:
+        </p>
+        <code>
+          function sayHello() {
+	          console.log("Hello, this is an example of function."); 
+        }
+        </code>
+        <p>
+          This function won't do any thing, unless you call it. The term for this is invoking the function.
+          Below is how to call the function:
+        </p>
+        <code>
+          sayHello();
+            //output: Hello, this is an example of function.
+        </code>
+        <p> 
+          Below is another example:
+        </p>
+        <code>
+          function sum(num1, num2){
+	          return num1 + num2;
+          }
+        </code>
+        <p>
+          To invoke this function, we call it like this:
+        </p>
+        <code>
+          sum(31, 2);
+          //output: 33
+        </code>
+
+         <p>
+          There are a few of different ways to define a function, but we won't discuss them in this blog.
+        </p>
+        <h2 class="justify">
+          The DOM and DevTools
+        </h2>
+        <h3>
+          What is the DOM?
+        </h3>
+        <p>
+          "The W3C Document Object Model (DOM) is a platform and language-neutral interface that allows programs and scripts to dynamically access and update the content, structure, and style of a document."
+        </p>
+          <ul>
+            The W3C DOM standard is separated into 3 different parts:
+            <li>
+              Core DOM - standard model for all document types
+            </li>
+            <li>
+              XML DOM - standard model for XML documents
+            </li>
+            <li>
+              HTML DOM - standard model for HTML documents
+            </li>
+          </ul>
+          <p>In this blog, we only discuss about the HTML DOM.</p>
+          <h3>
+            What is the HTML DOM?
+          </h3>
+          <ul>
+             The HTML DOM is a standard object model and programming interface for HTML. It defines:
+             <li>
+                The HTML elements as objects
+             </li>
+             <li>
+                The properties of all HTML elements
+             </li>
+             <li>
+                The methods to access all HTML elements
+             </li>
+             <li>
+                The events for all HTML elements
+             </li>
+          </ul>
+          <p>
+            In other words: The HTML DOM is a standard for how to get, change, add, or delete HTML elements.
+          </p>
+          <ul>
+            With the HTML DOM, JavaScript gets all the power it needs to create dynamic HTML. It can:
+            <li>
+                change all the HTML elements in the page
+            </li>
+            <li>
+               change all the HTML attributes in the page
+            </li>
+            <li>
+              change all the CSS styles in the page
+            </li>
+            <li>
+               remove existing HTML elements and attributes
+            </li>
+            <li>
+                add new HTML elements and attributes
+            </li>
+            <li>
+                react to all existing HTML events in the page
+            </li>
+            <li>
+                create new HTML events in the page
+            </li>
+          </ul>
+
+          <p>
+            Below is an example changes the content of the <p> element with id="demo":</p>
+            <code>
+             <html>
+              <body>
+              <p id="demo"></p>
+              <script>
+                document.getElementById("demo").innerHTML = "Hello World!";
+              </script>
+            </body>
+            </html> 
+            </code>
+            <p>
+              In the example above, getElementById is a method, while innerHTML is a property.
+            </p>
+
+          <h3>
+            DevTools
+          </h3>
+          <p>
+            One of the ways we access the DOM is using Developer Tools (DevTools). DevTools are a set of web developer tools, which assists us with testing and debugging websites and applications. All major browsers include developer tools, which enable developers to examine the code of a web page or app and run tests and evaluate metrics related to that code. Chrome Developer Tools (DevTools for short) is the industry standard. DevTools allows us to access the DOM and assists us with testing and debugging websites and applications.
+          </p>
+      </section>
+    </main>
+    <footer class="footer">
+      <p>©Copyright 2023 by Liang Wang All rights reserved.</p>
+    </footer>
+  </body>
+</html>
