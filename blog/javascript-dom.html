@@ -347,15 +347,27 @@
 
           <p>
             Below is an example changes the content of the <p> element with id="demo":
-            </p>
-                <code>
-               
-                    document.getElementById("demo").innerHTML = "Hello World!";
-               
-              </code>
-            <p>
-              In the example above, getElementById is a method, while innerHTML is a property of the selected element.
-            </p>
+        </p>
+        <img
+            class="image-example"
+            src="../image/access-dom.png"
+            alt="Access Dom Example"
+          />
+          <code>
+            <html>
+              <title>The title of the page</title>
+              <body>
+                <p id="demo"></p>
+                <script>
+                  document.getElementById("demo").innerHTML = "Hello World!";
+                </script>
+              </body>
+            </html>  
+        </code>
+
+          <p>
+            In the example above, getElementById is a method, while innerHTML is a property of the selected element.
+          </p>
 
           <h3>
             DevTools
@@ -367,11 +379,11 @@
           <p>
             Pressing F12 would launch the developer tools on most new browsers on a desktop. On chrome, they look something like this:
           </p>
-           <img
-              class="image-example"
-              src="../image/dev-tool-example.png"
-              alt="Dom model example"
-            />
+          <img
+            class="image-example"
+            src="../image/dev-tool-example.png"
+            alt="Dom model example"
+          />
           <p>
             Navigate each panel by clicking on the tab located on the top of the screen.
           </p>
